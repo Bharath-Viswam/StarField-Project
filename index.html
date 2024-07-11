@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style1.css">
+    <link rel="stylesheet" href="./CSS/style2.css">
+    <link rel="stylesheet" href="./CSS/style3.css">
+  <link rel="stylesheet" href="./CSS/style4.css">
+  <link rel="stylesheet" href="./CSS/style5.css">
+  <link rel="stylesheet" href="./CSS/style6.css">
+  <link rel="stylesheet" href="./CSS/style7.css">
+  <link rel="stylesheet" href="./CSS/style8.css">
+  <link rel="stylesheet" href="./CSS/style9.css">
+    <title>Starfield</title>
+    <script>
+        function validateForm() {
+      let username = document.forms["contactForm"]["username"].value;
+      let email = document.forms["contactForm"]["email"].value;
+      let phone = document.forms["contactForm"]["phone"].value;
+      let message = document.forms["contactForm"]["message"].value;
+
+      if (username == "" || email == "" || phone == "" || message == "") {
+          alert("All fields must be filled out");
+          return false;
+      }
+
+      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+          alert("Invalid email format");
+          return false;
+      }
+
+      let phonePattern = /^[0-9]{10}$/;
+      if (!phone.match(phonePattern)) {
+          alert("Phone number must be 10 digits");
+          return false;
+      }
+
+      return true;
+  }
+  function validateForm2() {
+  let username = document.forms["contactForm2"]["name"].value;
+  let email = document.forms["contactForm2"]["email"].value;
+  let phone = document.forms["contactForm2"]["phone"].value;
+  let message = document.forms["contactForm2"]["message"].value;
+
+  if (username == "" || email == "" || phone == "" || message == "") {
+      alert("All fields must be filled out");
+      return false;
+  }
+
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.match(emailPattern)) {
+      alert("Invalid email format");
+      return false;
+  }
+
+  let phonePattern = /^[0-9]{10}$/;
+  if (!phone.match(phonePattern)) {
+      alert("Phone number must be 10 digits");
+      return false;
+  }
+
+  return true;
+}
+    </script>
+</head>
+<body>
+    <nav>
+        <h1 class="logo">STAR FIELD</h1>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars" id="bars"></i>
+          <i class="fas fa-times" id="cancel"></i>
+        </label>
+        
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+      </nav>
+
+    <section class="showcash">
+        <div class="content">
+            <h2>LETS FOOTBALL</h2>
+            <div class="text">
+              The difference between winning and losing is how far you're willing to go! Your HUNGER will be tested on the field. Your DESIRE to win, will determine the outcome of the game. We keep on fighting even if the odds are stacked against us.
+            </div>
+            <a href="https://www.britannica.com/question/What-is-football" class="btn">Know more</a>
+        </div>
+    </section>
+    <div class="slider">
+
+
+      <div class="list">
+
+          <div class="item">
+              <img src="./Images/unitednorthvalley2.jpeg" alt="">
+
+              <div class="content">
+                  <div class="title">Licensed Club</div>
+                  <div class="type">NORTH VALLY UNITED</div>
+                 
+              
+              </div>
+          </div>
+
+          <div class="item">
+              <img src="./Images/unitedsoccercoaches1.jpeg" alt="">
+
+              <div class="content">
+                  <div class="title">Licensed Club</div>
+                  <div class="type">UNITED SOCCER COACHES</div>
+                
+
+              </div>
+          </div>
+          <div class="item">
+              <img src="./Images/kckunited.jpeg" alt="">
+
+              <div class="content">
+                  <div class="title">Licensed Club</div>
+                  <div class="type">KCK UNITED</div>
+         
+                  
+                  
+              </div>
+          </div>
+
+          <div class="item">
+              <img src="./Images/Goldsborostrikeeagles.jpeg" alt="">
+
+              <div class="content">
+                  <div class="title">Licensed Club</div>
+                  <div class="type">STRIKE EAGLE FC</div>
+                 
+              
+              </div>
+          </div>
+
+      </div>
+
+
+      <div class="thumbnail">
+
+          <div class="item">
+              <img src="./Images/unitednorthvalley2.jpeg" alt="">
+          </div>
+          <div class="item">
+              <img src="./Images/unitedsoccercoaches1.jpeg" alt="">
+          </div>
+          <div class="item">
+              <img src="./Images/kckunited.jpeg" alt="">
+          </div>
+          <div class="item">
+              <img src="./Images/Goldsborostrikeeagles.jpeg" alt="">
+          </div>
+
+      </div>
+
+
+      <div class="nextPrevArrows">
+          <button class="prev"> < </button>
+          <button class="next"> > </button>
+      </div>
+
+
+  </div>
+  <!-- <h1>NOTICE</h1> -->
+  <section class="wrapper">
+    <div class="shadow"></div>
+    <div class="home-body">
+        <div class="info">
+            <h1>UNITED</h1>
+            <h1>SOCCER COACHES</h1>
+
+            <p>FOOTBALL SECTION TRIALS FOR 1999-2003 Batch</p>
+            <p>DATE: 23 JULY 2024
+                VENUE: GREEN FIELD STADIUM
+                TIME: 8:00 AM</p>
+            <p>KERALA LEAGUE CHAMPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIATED RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
+        </div>
+        <div class="home_img">
+            <img src="./Images/unitedsoccercoachesnotice.jpeg" alt="">
+        </div>
+    </div>
+</section>
+<section class="wrapper">
+  <div class="shadow"></div>
+  <div class="home-body">
+      <div class="info">
+          <h1>KCK UNITED</h1>
+
+          <p>FOOTBALL SECTION TRIALS FOR 2004-2007 Batch</p>
+          <p>DATE: 16 JUNE 2024
+              VENUE: POOVAR GROUND
+              TIME: 7:30 AM</p>
+          <p>KERALA YOUTH WOMENS LEAGUE CHMAPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIAITES RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
+      </div>
+      <div class="home_img">
+          <img src="./Images/kckunitednotice.jpeg" alt="">
+      </div>
+  </div>
+</section>
+<section class="wrapper">
+    <div class="shadow"></div>
+    <div class="home-body">
+        <div class="info">
+            <h1>NORTH VALLEY UNITED</h1>
+
+            <p>FOOTBALL SECTION TRIALS FOR UNDER 10</p>
+            <p>DATE: 06 AUGUST 2024
+                VENUE: JAWAHARLAL NEHRU INTERNATIONAL STADIUM
+                TIME: 9:00 AM</p>
+            <p>KERALA CHILD LEAGUE CHMAPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIAITES RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
+        </div>
+        <div class="home_img">
+            <img src="./Images/Unitednorthvalleynotice.jpeg" alt="">
+        </div>
+    </div>
+</section>
+<section class="wrapper">
+    <div class="shadow"></div>
+    <div class="home-body">
+        <div class="info">
+            <h1>STRIKE EAGLES FC</h1>
+
+            <p>FOOTBALL SECTION TRIALS FOR 2008-2010 BATCH</p>
+            <p>DATE: 17 MAY 2024
+                VENUE: VP SATHYAN STADIUM
+                TIME: 7:00 AM</p>
+            <p>KERALA YOUTH LEAGUE CHMAPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIAITES RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
+        </div>
+        <div class="home_img">
+            <img src="./Images/goldsborostrikeaglesnotice.jpeg" alt="">
+        </div>
+    </div>
+</section>
+<h1>Register Now</h1>
+
+    <div class="container">  <span class="big-circle"></span>
+     <img src="img/shape.png" class="square" alt="" />
+     <div class="form">
+       <div class="contact-info">
+         <h3 class="title">Let's get in touch</h3>
+         <p class="text">
+             READY TO SHOWCASE YOUR SKILL,DON'T MISS OUT ON THE OPPURTUNITY TO TRY OUT FOR OUR TEAM!
+         </p>
+ 
+         <div class="info">
+           <div class="information">
+             <img src="img/location.png" class="icon" alt="" />
+             <p id="paragrphtxtcontactform">Fathima manzil Trivandram,Kerala</p>
+           </div>
+           <div class="information">
+             <img src="img/email.png" class="icon" alt="" />
+             <p id="paragrphtxtcontactform">siyadfathima644@gamil.com</p>
+           </div>
+           <div class="information">
+             <img src="img/phone.png" class="icon" alt="" />
+             <p id="paragrphtxtcontactform">7560854929</p>
+           </div>
+       </div>
+       </div></div>
+   
+    
+       <div class="contact-form">
+         <span class="circle one"></span>
+         <span class="circle two"></span>
+ 
+         <form name="contactForm" action="./php/contact.php" onsubmit="return validateForm()" method="POST" >
+           <h3 class="title">Contact us</h3>
+           <div class="input-container">
+             <input type="text" name="username" class="input" />
+             <label for="" id="tst" >Username</label>
+             <span>Username</span>
+           </div>
+           <div class="input-container">
+             <input type="email" name="email" class="input" />
+             <label for="">Email</label>
+             <span>Email</span>
+           </div>
+           <div class="input-container">
+             <input type="tel" name="phone" class="input" />
+             <label for="">Phone</label>
+             <span>Phone</span>
+           </div>
+           <div class="input-container textarea">
+             <textarea name="message" class="input"></textarea>
+             <label for="">Message</label>
+             <span>Message</span>
+           </div>
+           <input type="submit" value="Send" class="btn" />
+         </form>
+       </div>
+     </div>
+ 
+   <h1>Contact Us</h1>
+   <div class="container">
+     <span class="big-circle"></span>
+     <img src="img/shape.png" class="square" alt="" />
+     <div class="form">
+       <div class="contact-info">
+         <h3 class="title">Let's get in touch</h3>
+         <p class="text">
+           Inform about trail selection for the football players announcements made by clubs through this 
+         </p>
+ 
+         <div class="info">
+           <div class="information">
+             <img src="img/location.png" class="icon" alt="" />
+             <p>Fathima manzil Trivandram, kerala</p>
+           </div>
+           <div class="information">
+             <img src="img/email.png" class="icon" alt="" />
+             <p>siyadfathima644@gamil.com</p>
+           </div>
+           <div class="information">
+             <img src="img/phone.png" class="icon" alt="" />
+             <p>7560854929</p>
+           </div>
+         </div>
+       </div>
+ 
+       <div class="contact-form">
+         <span class="circle one"></span>
+         <span class="circle two"></span>
+ 
+         <form name="contactForm2" action="./php/contact2.php" onsubmit="return validateForm2()" method="POST"  >
+           <h3 class="title">Contact us</h3>
+           <div class="input-container">
+             <input type="text" name="name" class="input" />
+             <label for="">Club name</label>
+             <span>Club name</span>
+           </div>
+           <div class="input-container">
+             <input type="email" name="email" class="input" />
+             <label for="">Email</label>
+             <span>Email</span>
+           </div>
+           <div class="input-container">
+             <input type="tel" name="phone" class="input" />
+             <label for="">Phone</label>
+             <span>Phone</span>
+           </div>
+           <div class="input-container textarea">
+             <textarea name="message" class="input"></textarea>
+             <label for="">More information</label>
+             <span>More information</span>
+           </div>
+           <input type="submit" value="Send" class="btn" />
+         </form>
+       </div>
+     </div>
+   </div>
+<!-- <h1>Register Now</h1>
+
+   <div class="container">  <span class="big-circle"></span>
+    <img src="img/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+            READY TO SHOWCASE YOUR SKILL,DON'T MISS OUT ON THE OPPURTUNITY TO TRY OUT FOR OUR TEAM!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="img/location.png" class="icon" alt="" />
+            <p id="paragrphtxtcontactform">Fathima manzil Trivandram,Kerala</p>
+          </div>
+          <div class="information">
+            <img src="img/email.png" class="icon" alt="" />
+            <p id="paragrphtxtcontactform">siyadfathima644@gamil.com</p>
+          </div>
+          <div class="information">
+            <img src="img/phone.png" class="icon" alt="" />
+            <p id="paragrphtxtcontactform">7560854929</p>
+          </div>
+      </div>
+      </div></div>
+  
+   
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form name="contactForm" action="./php/contact.php" onsubmit="return validateForm()" method="POST" >
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="username" class="input" />
+            <label for="" id="tst" >Username</label>
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+
+  <h1>Contact Us</h1>
+  <div class="container">
+    <span class="big-circle"></span>
+    <img src="img/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Inform about trail selection for the football players announcements made by clubs through this 
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="img/location.png" class="icon" alt="" />
+            <p>Fathima manzil Trivandram, kerala</p>
+          </div>
+          <div class="information">
+            <img src="img/email.png" class="icon" alt="" />
+            <p>siyadfathima644@gamil.com</p>
+          </div>
+          <div class="information">
+            <img src="img/phone.png" class="icon" alt="" />
+            <p>7560854929</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form name="contactForm2" action="./php/contact2.php" onsubmit="return validateForm2()" method="POST"  >
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" />
+            <label for="">Club name</label>
+            <span>Club name</span>
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input"></textarea>
+            <label for="">More information</label>
+            <span>More information</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="table-box">
+    <div class="table-row table-head">
+        <div class="table-cell first-cell">
+            <p>CLUB NAME</p>
+        </div>
+        <div class="table-cell">
+            <p>AGE</p>
+        </div>
+        <div class="table-cell last-cell">
+            <p>PLAYER NAME</p>
+        </div> 
+    </div> -->
+
+
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>STRIKE EAGLES</p>
+        </div>
+        <div class="table-cell">
+            <p>20</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="KARTHIK.jpeg.jpeg">KARTHIK K</a>
+        </div>   
+    </div>
+
+
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>UNITED FC</p>
+        </div>
+        <div class="table-cell">
+            <p>19</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="https://youtu.be/v0IgI8vYD_o">ASHISH</a>
+        </div>
+    </div>
+
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>FULHAM FC</p>
+        </div>
+        <div class="table-cell">
+            <p>18</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="https://youtu.be/4bPABX-jOko">MAHEEN</a>
+        </div>
+    </div>
+
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>UNITED SOCCER COACHES</p>
+        </div>
+        <div class="table-cell">
+            <p>17</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="https://youtu.be/qCFN8EujbGI">ADITH B KURUP</a>
+        </div>
+    </div>
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>STRIKE EAGLES</p>
+        </div>
+        <div class="table-cell">
+            <p>20</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="DETAILS.JPEG.jpeg">RIYAS AMEEN</a>
+        </div>   
+    </div>
+
+
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>UNITED FC</p>
+        </div>
+        <div class="table-cell">
+            <p>19</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="https://youtu.be/v0IgI8vYD_o">ASHISH</a>
+        </div>
+    </div>
+
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>FULHAM FC</p>
+        </div>
+        <div class="table-cell">
+            <p>18</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="https://youtu.be/4bPABX-jOko">MAHEEN</a>
+        </div>
+    </div>
+
+    <div class="table-row">
+        <div class="table-cell first-cell">
+            <p>UNITED SOCCER COACHES</p>
+        </div>
+        <div class="table-cell">
+            <p>17</p>
+        </div>
+        <div class="table-cell last-cell">
+            <a href="https://youtu.be/qCFN8EujbGI">ADITH B KURUP</a>
+        </div>
+    </div>
+
+    
+</div>   
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+      <h3>STAR<span>FIELD</FIELDset></span></h3>
+
+      <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="./contact.html">Contact</a>
+          
+          
+      </p>
+
+      <p class="footer-company-name">Copyright © 2024 <strong>STAR FIELD</strong> All rights reserved</p>
+  </div>
+
+  <div class="footer-center">
+      <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Kollam</span>
+              KERALA</p>
+      </div>
+
+      <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 9995624419</p>
+      </div>
+      <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:sagar00001.co@gmail.com">siyadfathima644@gmail.com</a></p>
+      </div>
+  </div>
+  <div class="footer-right">
+      <p class="footer-company-about">
+          <span>About the company</span>
+          <strong>STAR FIELD</strong> is a Youtube channel where you can find more creative CSS Animations
+          and
+          Effects along with
+          HTML, JavaScript and Projects using C/C++.
+      </p>
+  </div>
+</footer>
+<script>
+    let menu = document.querySelector("#menu"),
+    bars = document.querySelector("#bars");
+
+    bars.addEventListener("click",function(){
+        menu.classList.toggle("mobilemenu")
+    })
+</script>
+
+<script src="./Js/slider.js"></script>
+<script src="./Js/app"></script>
+</body>
+</html>
