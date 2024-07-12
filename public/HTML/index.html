@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/style1.css"
+    <link rel="stylesheet" href="/public/css/style1.css"
     >
-    <link rel="stylesheet" href="/public/CSS/style2.css">
+
+    <link rel="stylesheet" href="/public/css/style2.css">
     <link rel="stylesheet" href="/public/CSS/style3.css">
     <link rel="stylesheet" href="/public/CSS/style4.css">
     <link rel="stylesheet" href="/public/CSS/style5.css">
-    <link rel="stylesheet" href="/public/CSS/style6.css">
-    <link rel="stylesheet" href="/public/CSS/style7.css">
+    <link rel="stylesheet" href="/public/CSS/style6.css"> 
+<link rel="stylesheet" href="/public/CSS/style7.css">
     <link rel="stylesheet" href="/public/CSS/style8.css">
     <link rel="stylesheet" href="/public/CSS/style9.css">
     <title>Starfield</title>
+  
     <script>
         function validateForm() {
+        
       let username = document.forms["contactForm"]["username"].value;
       let email = document.forms["contactForm"]["email"].value;
       let phone = document.forms["contactForm"]["phone"].value;
@@ -80,7 +83,7 @@
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
 
       </nav>
@@ -100,7 +103,7 @@
       <div class="list">
 
           <div class="item">
-              <img src="./Images/unitednorthvalley2.jpeg" alt="">
+              <img src="/public/Images/unitednorthvalley2.jpeg" alt="">
 
               <div class="content">
                   <div class="title">Licensed Club</div>
@@ -111,7 +114,7 @@
           </div>
 
           <div class="item">
-              <img src="./Images/unitedsoccercoaches1.jpeg" alt="">
+              <img src="/public/Images/unitedsoccercoaches1.jpeg" alt="">
 
               <div class="content">
                   <div class="title">Licensed Club</div>
@@ -121,7 +124,7 @@
               </div>
           </div>
           <div class="item">
-              <img src="./Images/kckunited.jpeg" alt="">
+              <img src="/public/Images/kckunited.jpeg" alt="">
 
               <div class="content">
                   <div class="title">Licensed Club</div>
@@ -133,7 +136,7 @@
           </div>
 
           <div class="item">
-              <img src="./Images/Goldsborostrikeeagles.jpeg" alt="">
+              <img src="/public/Images/Goldsborostrikeeagles.jpeg" alt="">
 
               <div class="content">
                   <div class="title">Licensed Club</div>
@@ -149,16 +152,16 @@
       <div class="thumbnail">
 
           <div class="item">
-              <img src="./Images/unitednorthvalley2.jpeg" alt="">
+              <img src="/public/Images/unitednorthvalley2.jpeg" alt="">
           </div>
           <div class="item">
-              <img src="./Images/unitedsoccercoaches1.jpeg" alt="">
+              <img src="/public/Images/unitedsoccercoaches1.jpeg" alt="">
           </div>
           <div class="item">
-              <img src="./Images/kckunited.jpeg" alt="">
+              <img src="/public/Images/kckunited.jpeg" alt="">
           </div>
           <div class="item">
-              <img src="./Images/Goldsborostrikeeagles.jpeg" alt="">
+              <img src="/public/Images/Goldsborostrikeeagles.jpeg" alt="">
           </div>
 
       </div>
@@ -186,7 +189,7 @@
             <p>KERALA LEAGUE CHAMPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIATED RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
         </div>
         <div class="home_img">
-            <img src="./Images/unitedsoccercoachesnotice.jpeg" alt="">
+            <img src="/public/Images/unitedsoccercoachesnotice.jpeg" alt="">
         </div>
     </div>
 </section>
@@ -203,7 +206,7 @@
           <p>KERALA YOUTH WOMENS LEAGUE CHMAPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIAITES RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
       </div>
       <div class="home_img">
-          <img src="./Images/kckunitednotice.jpeg" alt="">
+          <img src="/public/Images/kckunitednotice.jpeg" alt="">
       </div>
   </div>
 </section>
@@ -220,7 +223,7 @@
             <p>KERALA CHILD LEAGUE CHMAPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIAITES RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
         </div>
         <div class="home_img">
-            <img src="./Images/Unitednorthvalleynotice.jpeg" alt="">
+            <img src="/public/Images/Unitednorthvalleynotice.jpeg" alt="">
         </div>
     </div>
 </section>
@@ -237,7 +240,7 @@
             <p>KERALA YOUTH LEAGUE CHMAPIONS, WE ARE INVITE ASPIRING FOOTBALL TALENTS SELECTION CANDIAITES RECEIVE FREE TRAINING, FOOD AND ACCOMODATION</p>
         </div>
         <div class="home_img">
-            <img src="./Images/goldsborostrikeaglesnotice.jpeg" alt="">
+            <img src="/public/Images/goldsborostrikeaglesnotice.jpeg" alt="">
         </div>
     </div>
 </section>
@@ -273,7 +276,7 @@
          <span class="circle one"></span>
          <span class="circle two"></span>
  
-         <form name="contactForm" action="./php/contact.php" onsubmit="return validateForm()" method="POST" >
+         <form name="contactForm" action="/public/php/contact.php" onsubmit="return validateForm()" method="POST" >
            <h3 class="title">Contact us</h3>
            <div class="input-container">
              <input type="text" name="username" class="input" />
@@ -331,7 +334,7 @@
          <span class="circle one"></span>
          <span class="circle two"></span>
  
-         <form name="contactForm2" action="./php/contact2.php" onsubmit="return validateForm2()" method="POST"  >
+         <form name="contactForm2" action="/public/php/contact2.php" onsubmit="return validateForm2()" method="POST"  >
            <h3 class="title">Contact us</h3>
            <div class="input-container">
              <input type="text" name="name" class="input" />
@@ -598,7 +601,7 @@
           |
           <a href="#">About</a>
           |
-          <a href="./contact.html">Contact</a>
+          <a href="/public/HTML/contact.html">Contact</a>
           
           
       </p>
@@ -641,7 +644,7 @@
     })
 </script>
 
-<script src="./Js/slider.js"></script>
-<script src="./Js/app"></script>
+<script src="/public/Js/slider.js"></script>
+<script src="/public/Js/app.js"></script>
 </body>
 </html>

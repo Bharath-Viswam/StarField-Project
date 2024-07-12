@@ -2,10 +2,10 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/autoload.php';
+require './public/vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = sanitize_input($_POST["name"]);
+    $username = sanitize_input($_POST["username"]);
     $email = sanitize_input($_POST["email"]);
     $phone = sanitize_input($_POST["phone"]);
     $message = sanitize_input($_POST["message"]);
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
         $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->Username = 'riyasameen050@gmail.com'; // SMTP username
+        $mail->Username = "riyasameen050@gmail.com"; // SMTP username
         $mail->Password = 'ukcr cuic sqvg tlof'; // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587; // TCP port to connect to
