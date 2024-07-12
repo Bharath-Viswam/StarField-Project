@@ -5,7 +5,11 @@ $request = $_SERVER['REQUEST_URI'];
 $request = strtok($request, '?');
 
 // Define the path to the public directory
-$publicPath = __DIR__ . '/../public';
+$publicPath = realpath(__DIR__ . '/../public');
+
+// Log information for debugging
+error_log("Original request: $request");
+error_log("Public path: $publicPath");
 
 switch ($request) {
     case '/' :
@@ -17,9 +21,10 @@ switch ($request) {
     default:
         if (strpos($request, '/public/') === 0) {
             // Handle all requests under /public
-            $file = realpath($publicPath . str_replace('/public', '', $request));
-            if ($file && strpos($file, $publicPath) === 0 && is_file($file)) {
-                $ext = pathinfo($file, PATHINFO_EXTENSION);
+            $filePath = realpath($publicPath . str_replace('/public', '', $request));
+            error_log("Resolved file path: $filePath");
+            if ($filePath && strpos($filePath, $publicPath) === 0 && is_file($filePath)) {
+                $ext = pathinfo($filePath, PATHINFO_EXTENSION);
                 switch ($ext) {
                     case 'css':
                         header("Content-Type: text/css");
@@ -41,13 +46,16 @@ switch ($request) {
                         header("Content-Type: image/svg+xml");
                         break;
                     case 'php':
-                        include $file;
-                        exit;
+                            header("Content-Type: text/html"); // For PHP scripts
+                            include($filePath);
+                            exit;
                     default:
                         header("Content-Type: application/octet-stream");
                 }
-                readfile($file);
+                readfile($filePath);
                 exit;
+            } else {
+                error_log("File not found or invalid path: $filePath");
             }
         }
         // 404 for all other cases
@@ -55,3 +63,4 @@ switch ($request) {
         require $publicPath . '/HTML/404.html';
         break;
 }
+?>
