@@ -1,11 +1,11 @@
 {
-    "name": "user/starfield-host",
+    "name": "user/starfield-vercel-host",
     "require": {
         "phpmailer/phpmailer": "^6.9"
     },
     "autoload": {
         "psr-4": {
-            "User\\StarfieldHost\\": "public/"
+            "User\\StarfieldVercelHost\\": "src/"
         }
     }
 }

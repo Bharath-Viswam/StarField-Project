@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'user/starfield-host',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'name' => 'user/starfield-vercel-host',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'daf4205e46563be655265ba78b03e99dffa3b2e0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -19,10 +19,10 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'user/starfield-host' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+        'user/starfield-vercel-host' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'daf4205e46563be655265ba78b03e99dffa3b2e0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

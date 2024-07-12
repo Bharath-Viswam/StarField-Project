@@ -6,6 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'User\\StarfieldHost\\' => array($baseDir . '/src'),
+    'User\\StarfieldVercelHost\\' => array($baseDir . '/src'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
 );
