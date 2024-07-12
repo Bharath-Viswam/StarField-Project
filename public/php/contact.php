@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require './public/vendor/autoload.php';
+require '/public/vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = sanitize_input($_POST["username"]);
