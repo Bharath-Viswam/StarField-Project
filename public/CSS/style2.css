@@ -208,7 +208,9 @@ header a:hover{
 }
 
 
-
+.showcash{
+    height:100vh;
+}
 
 /* Animation for next button click */
 .slider.next .list .item:nth-child(1) img{
