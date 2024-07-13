@@ -18,6 +18,9 @@ switch ($request) {
     case '/contact' :
         require $publicPath . '/HTML/contact.html';
         break;
+    case '/about':
+        require $publicPath . '/HTML/about.html';
+        break;
     default:
         if (strpos($request, '/public/') === 0) {
             // Handle all requests under /public
