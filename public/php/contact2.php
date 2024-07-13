@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Content
         $mail->isHTML(true); // Set email format to HTML
         $mail->Subject = 'Contact Form Submission';
-        $mail->Body    = "Username: $username<br>Email: $email<br>Phone: $phone<br>Message: $message";
+        $mail->Body    = "ClubName: $username<br>Email: $email<br>Phone: $phone<br>Message: $message";
 
         $mail->send();
         echo 'Message has been sent';
