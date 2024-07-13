@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body,
-input,
-textarea {
+body, input, textarea {
   font-family: "Poppins", sans-serif;
 }
 
@@ -20,7 +16,7 @@ textarea {
   background-color: #000000;
   overflow: hidden;
   display: flex;
- align-items: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -115,20 +111,20 @@ textarea.input {
 }
 
 .input-container2 label {
- position: absolute;
+  position: absolute;
   top: 50%;
-  left: 15px; 
-  transform: translateY(-50%); 
+  left: 15px;
+  transform: translateY(-50%);
   padding: 0 0.4rem;
   color: #fafafa;
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
   z-index: 1000;
- transition: 0.5s; 
+  transition: 0.5s;
 }
 
-.input-container2 .textarea label {
+.input-container2.textarea label {
   top: 1rem;
   transform: translateY(0);
 }
@@ -214,13 +210,14 @@ textarea.input {
 
 .information {
   display: flex;
-  color: #555!important;
+  color: #555 !important;
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
 }
-.information p{
-  color:black!important;
+
+.information p {
+  color: black !important;
 }
 
 .icon {
@@ -257,7 +254,7 @@ textarea.input {
   transform: scale(1.05);
 }
 
-.contact-info:before {
+.contact-info2:before {
   content: "";
   position: absolute;
   width: 110px;
@@ -302,86 +299,64 @@ textarea.input {
 
 @media (max-width: 850px) {
   .form {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   }
 
-  .contact-info:before {
-    bottom: initial;
-    top: -75px;
-    right: 65px;
-    transform: scale(0.95);
+  .contact-info2:before {
+      bottom: initial;
+      top: -75px;
+      right: 65px;
+      transform: scale(0.95);
   }
 
-  .contact-form:before {
-    top: -13px;
-    left: initial;
-    right: 70px;
+  .contact-form2:before {
+      top: -13px;
+      left: initial;
+      right: 70px;
   }
 
   .square {
-    transform: translate(140%, 43%);
-    height: 350px;
+      transform: translate(140%, 43%);
+      height: 350px;
   }
 
   .big-circle {
-    bottom: 75%;
-    transform: scale(0.9) translate(-40%, 30%);
-    right: 50%;
+      bottom: 75%;
+      transform: scale(0.9) translate(-40%, 30%);
+      right: 50%;
   }
 
   .text {
-    margin: 1rem 0 1.5rem 0;
+      margin: 1rem 0 1.5rem 0;
   }
 
   .social-media {
-    padding: 1.5rem 0 0 0;
+      padding: 1.5rem 0 0 0;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 1.5rem;
+  .container2 {
+      padding: 1.5rem;
   }
 
-  .contact-info:before {
-    display: none;
+  .contact-info2:before {
+      display: none;
   }
 
-  .square,
-  .big-circle {
-    display: none;
+  .square, .big-circle {
+      display: none;
   }
 
-  form,
-  .contact-info {
-    padding: 1.7rem 1.6rem;
+  form, .contact-info2 {
+      padding: 1.7rem 1.6rem;
   }
 
-  .text,
-  .information,
-  .social-media p {
-    font-size: 0.8rem;
+  .text, .social-media {
+      text-align: center;
   }
 
-  .title {
-    font-size: 1.15rem;
-  }
-
-  .social-icons a {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .icon {
-    width: 23px;
-  }
-
-  .input {
-    padding: 0.45rem 1.2rem;
-  }
-
-  .btn2 {
-    padding: 0.45rem 1.2rem;
+  .social-icons {
+      justify-content: center;
   }
 }
