@@ -32,7 +32,7 @@
     .logo1 {
       color: var(--color-white);
       text-transform: uppercase;
-      font-size: 35px;
+      font-size: 36px;
     }
     
     ul {
@@ -81,13 +81,13 @@
     
     .checkbtn #cancel,
     .checkbtn #bars {
-      font-size: 30px;
-      color: var(--color-white);
-      cursor: pointer;
+      font-size: 30px!important;
+      color: var(--color-white)!important;
+      cursor: pointer!important;
     
-      display: none;
+      display: none!important;
     
-      transition: all 0.5s ease;
+      transition: all 0.5s ease!important;
     }
     
     #check {
@@ -149,7 +149,7 @@
     
     @media screen and (max-width: 940px) {
       .checkbtn #bars {
-        display: block;
+        display: block!important;
       }
     
       ul {
@@ -177,11 +177,11 @@
       }
     
       #check:checked ~ label #bars {
-        display: none;
+        display: none!important;
       }
     
       #check:checked ~ label #cancel {
-        display: block;
+        display: block!important;
       }
     
       .content {
